@@ -1,6 +1,6 @@
-name: 'Cache'
-description: 'Cache artifacts like dependencies and build outputs to improve workflow execution time'
-author: 'GitHub'
+name: 'Cache for Self-Hosted Runners'
+description: 'Cache artifacts with local filesystem support for self-hosted runners using PVC/NFS storage'
+author: 'self-hosted-actions'
 inputs:
   path:
     description: 'A list of files, directories, and wildcard patterns to cache and restore'
