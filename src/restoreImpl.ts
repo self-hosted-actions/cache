@@ -8,6 +8,7 @@ import {
     StateProvider
 } from "./stateProvider";
 import * as utils from "./utils/actionUtils";
+import { restoreCacheWrapper } from "./cacheWrapper";
 
 export async function restoreImpl(
     stateProvider: IStateProvider,
@@ -42,7 +43,7 @@ export async function restoreImpl(
         const failOnCacheMiss = utils.getInputAsBool(Inputs.FailOnCacheMiss);
         const lookupOnly = utils.getInputAsBool(Inputs.LookupOnly);
 
-        const cacheKey = await cache.restoreCache(
+        const cacheKey = await restoreCacheWrapper(
             cachePaths,
             primaryKey,
             restoreKeys,
