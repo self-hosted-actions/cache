@@ -1,4 +1,4 @@
-name: 'Cache for Self-Hosted Runners'
+name: 'Local Cache for Self-Hosted Runners'
 description: 'Cache artifacts with local filesystem support for self-hosted runners using PVC/NFS storage'
 author: 'self-hosted-actions'
 inputs:
